@@ -23,6 +23,3 @@ and then run "node app"
 <br>
 then open http://localhost:3000/ in your local machine to visit the site
 <br>
-A Full Stack Website, help to store details of campgrounds
-<br>
-Website made using Nodejs, Express, MongoDB

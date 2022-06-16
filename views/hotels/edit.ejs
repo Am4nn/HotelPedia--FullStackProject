@@ -1,0 +1,63 @@
+<% layout('layout/boilerplate') %>
+
+    <div class="row">
+        <h1 class="text-center">Edit Hotel</h1>
+        <div class="col-md-6 offset-md-3">
+            <form action="/hotels/<%= hotel._id %>?_method=PUT" method="POST" class="validated-form"
+                enctype="multipart/form-data" novalidate>
+                <div class="mb-3">
+                    <label class="form-label" for="title">Title</label>
+                    <input class="form-control" type="text" name="hotel[title]" value="<%= hotel.title %>"
+                        id="title" required>
+                    <div class="valid-feedback">
+                        Looks good
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="location">Location</label>
+                    <input class="form-control" type="text" name="hotel[location]"
+                        value="<%= hotel.location %>" id="location" required>
+                    <div class="valid-feedback">
+                        Looks good
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="price">Hotel Price</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="price-label">&#8377;</span>
+                        <input type="text" class="form-control" id="price" placeholder="0.00" aria-label="price"
+                            aria-describedby="price-label" name="hotel[price]" value="<%= hotel.price %>"
+                            required>
+                        <div class="valid-feedback">
+                            Looks good
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="description">Description</label>
+                    <textarea class="form-control" type="text" name="hotel[description]" id="description"
+                        required><%= hotel.description %></textarea>
+                    <div class="valid-feedback">
+                        Looks good
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="image" class="form-label">Upload More Images</label>
+                    <input class="form-control" type="file" name="image" id="images" multiple>
+                </div>
+                <div class="mb-3">
+                    <% hotel.images.forEach(function(img ,i) { %>
+                        <img src="<%= img.thumbnail %>" class="img-thumbnail" alt="">
+                        <div class="form-check-inline">
+                            <input type="checkbox" id="image-<%=i%>" name="deleteImages[]" value="<%= img.filename %>">
+                            <label for="image-<%=i%>">Delete?</label>
+                        </div>
+                        <% }) %>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-info" type="submit">Update Hotel</button>
+                </div>
+            </form>
+            <a href="/hotels/<%= hotel._id %>">Back To Hotels</a>
+        </div>
+    </div>

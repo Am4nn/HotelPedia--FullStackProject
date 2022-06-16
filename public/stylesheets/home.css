@@ -1,0 +1,73 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://res.cloudinary.com/daxy8axxm/image/upload/v1655414273/HotelPedia/hotel-river-retreat_et3lla.jpg");
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+    caret-color: transparent;
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+header {
+    border-radius: 1rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: #343a40aa !important;
+}
+
+header>div>h3 {
+    text-shadow: 1px 1px 3px #D65DB1;
+}
+
+main {
+    padding: 2rem 0rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.171) !important;
+    box-shadow: 0px 0px 6px 3px hsl(0, 0%, 88%);
+}
+
+main>h1 {
+    font-size: 3rem;
+    color: #D65DB1;
+}
+
+main>p {
+    margin: 1rem 0;
+    color: khaki;
+}
+
+main>a:hover {
+    background-color: hsl(318, 60%, 90%) !important;
+}
+
+.cover-container {
+    max-width: 60vw;
+}
+
+.nav-link {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 1rem;
+    border-bottom: 0.25rem solid transparent;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.5);
+    /* border-bottom-color: rgba(255, 255, 255, 0.5); */
+    border-bottom-color: hsla(318, 60%, 80%, 0.5);
+}
+
+.nav-link.active {
+    color: white;
+    border-bottom-color: #D65DB1;
+}
+
+.btn-secondary,
+.btn-secondary:hover {
+    color: #333;
+    text-shadow: none;
+}

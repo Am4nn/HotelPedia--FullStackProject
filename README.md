@@ -11,7 +11,7 @@ preview of websites : <br>
 ![Screenshot (698)](https://user-images.githubusercontent.com/86537681/174194408-5c86d127-d168-46c3-8b7f-1f1fd5ed82b6.png) <br>
 
 <br>
-To visit website oon local computer : 
+To visit website on local computer : 
 <br>
 Download the code and run "npm install"
 <br>

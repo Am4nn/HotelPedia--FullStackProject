@@ -5,7 +5,7 @@ Technology Use : Nodejs, Expressjs, MongoDB, HTML, CSS, JS, Cloudinary, MapBox
 <br>
 To visit live website goto : https://intense-caverns-79298.herokuapp.com/ Deployed on Heroku
 <br>
-preview of websites : <br>
+preview of website : <br>
 ![Screenshot (696)](https://user-images.githubusercontent.com/86537681/174194400-f51e598f-fe71-4195-baa0-7b8575b5d5bb.png) <br>
 ![Screenshot (697)](https://user-images.githubusercontent.com/86537681/174194405-b9c7ca7c-d146-45c7-9ea9-c768cf084803.png) <br>
 ![Screenshot (698)](https://user-images.githubusercontent.com/86537681/174194408-5c86d127-d168-46c3-8b7f-1f1fd5ed82b6.png) <br>
